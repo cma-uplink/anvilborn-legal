@@ -25,83 +25,101 @@
 </head>
 <body>
   <h1>ANVILBORN — Privacy Policy</h1>
-  <p class="updated">Last updated: 27 August 2026</p>
-  <p>ANVILBORN is a training app. This policy says what it stores, what leaves your phone, and what never does. It describes what the app actually does, not what it might do one day — when the app changes, this page changes with it.</p>
+  <p class="updated">Last updated: 27 October 2026</p>
+  <p>ANVILBORN is a training app. This policy says what it stores, what leaves your phone, who receives it, and what you can do about it. It describes what the app actually does. When the app changes, this page changes with it.</p>
   <h2>The short version</h2>
   <ul>
     <li><strong>You never have to give an email address.</strong> Every part of the app works without one.</li>
-    <li><strong>The app does make an account for you, silently, on first launch.</strong> It has no email and no name attached, and it exists so your training can be backed up and so a leaderboard can have a row for you. You can delete it, and everything in it, from Settings.</li>
-    <li><strong>Your training lives on your phone first.</strong> It is written to a database on the device; the copy on our server is a mirror, never the original.</li>
-    <li><strong>Progress photos never leave your phone.</strong> Not with an account, not in a backup, not ever. That is enforced in the code and by a test, not promised by this page.</li>
-    <li><strong>Other people can see six things about you</strong>, and only if you appear on a leaderboard: your name, your level, your title, your verified activity, your strongest body part, and your invite code. Never a lift, a record, a bodyweight, a height or a photo.</li>
-    <li><strong>Nothing about you is sold, and nothing is shared with advertisers.</strong></li>
+    <li><strong>The app makes an anonymous account for you on first launch.</strong> It has no email or name attached. It exists so your training can be backed up and so a leaderboard can have a row for you. You can delete it, and everything in it, from Settings.</li>
+    <li><strong>Your training lives on your phone first.</strong> The copy on our server is a backup, never the original.</li>
+    <li><strong>Photos never leave your phone.</strong> Progress photos, your profile photo and your cover image stay on the device. That is enforced in the code and by a test.</li>
+    <li><strong>Other people can see six things about you</strong>, and only if you appear on a leaderboard: your name, your level, your title, your verified activity, your strongest body part, and your invite code.</li>
+    <li><strong>Nothing about you is sold, and nothing is shared with advertisers.</strong> There are no ads and no advertising trackers in the app.</li>
   </ul>
+  <h2>Who is responsible</h2>
+  <p>ANVILBORN is made and run by one person, an individual developer, not a company. That developer decides what the app collects and why, and is the "controller" of your data under laws like the GDPR. The developer is named on the Google Play listing and can be reached at the address under Contact.</p>
   <h2>What is stored on your phone</h2>
   <ul>
     <li>The character you made, and its name.</li>
     <li>Every session, exercise and set you log, with dates.</li>
-    <li>Your XP, level, unlocks and training-volume figures.</li>
-    <li>Anything you chose to tell the app: bodyweight, height, units, date of birth, sex, the equipment you can train with, how many days a week you train, your goal, and any notes you write on a day.</li>
-    <li>Progress photos, if you take them.</li>
-    <li>Your settings, including whether the coach may read your profile.</li>
+    <li>Your XP, level, medals, titles and training-volume figures.</li>
+    <li>Anything you chose to tell the app: bodyweight, height, units, date of birth, sex, equipment, places you train, training days, goal, food and protein entries, and notes.</li>
+    <li>Progress photos, a profile photo and a cover image, if you add them.</li>
+    <li>Your settings.</li>
   </ul>
-  <p>All of it is optional except the character. Leaving something blank is a real answer: the app plans and scores exactly the same without it.</p>
-  <h2>The account you did not ask for</h2>
-  <p>On first launch the app signs in anonymously. No email, no password, no name — just an identifier, so that the copy of your training on our server has an owner and so a leaderboard row can belong to somebody. Nothing is sent because of this on its own; it is what makes the rest of this section possible.</p>
-  <p>You can add an email later to reach the same account from another phone. Doing that keeps everything the anonymous account already had.</p>
-  <p><strong>Delete account</strong>, in Settings, removes every row from our server and the account itself, then wipes this phone. There is no undo and no waiting on anyone to action it.</p>
-  <h2>What leaves your phone</h2>
-  <h3>Your training, to our database</h3>
-  <p>A copy of your training is stored on our Supabase database so you can restore it or use a second device: your character, your sessions and sets, your XP and unlocks, and the profile fields listed above. Each row is readable only by the account that owns it, enforced by the database itself rather than by the app.</p>
-  <p><strong>Progress photos are excluded from that copy.</strong> They are not among the tables the sync is permitted to touch.</p>
+  <p>Only the character is needed to start, and the app asks your year of birth once to check your age; the year itself is not kept. Everything else is optional: the app plans and scores the same without it.</p>
+  <h2>What leaves your phone, and why</h2>
+  <h3>Your training, to our database (Supabase)</h3>
+  <p>A copy of your training is stored on our Supabase database, in the United States, so you can restore it or use a second phone: your character, sessions, sets, XP, medals, plans, and the profile fields above. Each row is readable only by the account that owns it, enforced by the database itself. Photos are not part of this copy.</p>
   <h3>Six facts, to anyone on a leaderboard with you</h3>
-  <p>If you are on a leaderboard, a single row about you is readable by other users of the app: your display name, your level, your title, your verified activity total, your strongest body part, and your invite code. That is the whole row. Your lifts, records, bodyweight, height, birth date, notes and photos are in tables no other account can read.</p>
-  <p>The global board is everybody using the app. A friends board is only people whose invite code you entered, or who entered yours.</p>
-  <h3>Your question to the coach, in Online mode</h3>
-  <p>The coach runs in one of two modes, and the screen always says which one answered. <strong>On this phone</strong> — a model you downloaded runs locally, and your question does not leave the device. <strong>Online</strong> — your question goes to our server, which passes it to Groq, the model provider, which returns an answer.</p>
-  <p>In Online mode, and only if you switch on "let EMBER use my profile", some facts about you are sent with the question so the answer can be about your training rather than training in general. Body figures are blurred first:</p>
+  <p>If you are on a leaderboard, one row about you is readable by other users: your display name, level, title, verified activity total, strongest body part and invite code. Your lifts, records, bodyweight, height, birth date, notes and photos are never in it.</p>
+  <h3>Sign-in (Supabase and Google)</h3>
+  <p>If you add an email or use Google sign-in, your email address is stored with your account so you can sign in again. With Google sign-in, Google tells us your email and a Google account identifier. We do not receive your Google password or contacts.</p>
+  <h3>Purchases (Google Play and RevenueCat)</h3>
+  <p>If you buy Pro or leave a tip, Google Play takes the payment. We never see your card or bank details. RevenueCat, our purchase service, receives your anonymous account identifier and the purchase record from Google Play (what you bought, when, and whether it is active) so the app knows you have Pro on any phone.</p>
+  <h3>Health Connect, only if you connect it</h3>
+  <p>If you tap Connect, the app can read steps, distance and exercise sessions from Health Connect, and nothing else. It asks only when you tap Connect. The readings are not uploaded. The XP they earn is stored as verified activity and backed up like your other training, and that total is what a leaderboard ranks on. You can withdraw access any time in Health Connect. Health Connect data is used only to run these features, never for advertising, and never sold.</p>
+  <h3>Analytics and crash reports (PostHog and Sentry)</h3>
   <ul>
-    <li>Equipment, goal, days per week, session length — exact, in both modes.</li>
-    <li>Bodyweight — exact on this phone, rounded online, e.g. "~85 kg".</li>
-    <li>Height — exact on this phone, rounded online, e.g. "~180 cm".</li>
-    <li>Age — exact on this phone, decade only online, e.g. "30s".</li>
-    <li>Sex — exact, in both modes.</li>
-    <li><strong>Your name — never, in either mode.</strong></li>
-    <li><strong>Your training history — never, in either mode.</strong></li>
+    <li><strong>PostHog</strong> receives events about how the app is used, such as that a set was logged or a level was reached, with your anonymous account identifier. It never receives your name, email, a photo or a location: the app's event schema forbids those fields, and a test enforces it.</li>
+    <li><strong>Sentry</strong> receives crash reports so bugs can be fixed. It is set up not to attach personal information.</li>
   </ul>
-  <p>That setting is off until you turn it on, it is asked for once, and it can be turned off at any time. It is remembered per device.</p>
-  <h3>Analytics and crash reports</h3>
+  <h3>App updates and downloads</h3>
+  <p>The app checks Expo’s update service for new versions, and downloads the offline coach’s model from Hugging Face if you choose to. Like any download, these services see your IP address and device type. Nothing about your training is sent.</p>
+  <h3>What stays on the phone</h3>
   <ul>
-    <li><strong>PostHog</strong> receives events about how the app is used — that it was opened, that a set was logged, that a level was reached. It never receives your name, your email, a photo or a location: the app's event schema forbids those fields, and a test enforces it.</li>
-    <li><strong>Sentry</strong> receives crash reports so the app can be fixed. It is configured not to attach personal information.</li>
+    <li>The coach runs entirely on your phone. Your questions never leave it.</li>
+    <li>Spoken countdowns use your phone’s own text-to-speech.</li>
+    <li>Rest-timer and reminder notifications are scheduled on the phone.</li>
+    <li>The app sets no cookies and contains no advertising or cross-app tracking.</li>
   </ul>
-  <p>Both exist to make the app work better. Neither is advertising.</p>
+  <h2>Why we use your data (legal bases)</h2>
+  <ul>
+    <li><strong>To provide the app you asked for</strong> (contract): storing and backing up your training, sign-in, Pro, leaderboards.</li>
+    <li><strong>With your consent</strong>: Health Connect, which you can withdraw at any time.</li>
+    <li><strong>Legitimate interests</strong>: crash reports and anonymous usage events, to keep the app working and improve it. You can object by emailing us.</li>
+    <li><strong>Legal obligations</strong>: keeping purchase records where tax law requires.</li>
+  </ul>
   <h2>Health information</h2>
-  <p>ANVILBORN records what you lift and how often. If you allow it, it can also read steps, distance and workouts your phone already recorded, through Health Connect. It asks only for those three, only when you tap Connect, and never at launch.</p>
-  <p><strong>What that data turns into does leave your phone.</strong> The readings themselves are not uploaded, but the XP they earn is: it is stored as verified activity, mirrored to your account like the rest of your training, and it is the number a leaderboard ranks on. A total appears beside your name; the steps and sessions behind it do not.</p>
-  <blockquote>Nothing in this app is medical advice, and nothing in it is a health assessment. The body-part figures are an index of how much training each part has had recently. They are not a statement about your body, your fitness or your health, and they are not a diagnosis. The coach is a language model, and its answers carry that warning on the screen they appear on. Talk to a qualified professional about your health. This is an app about lifting things.</blockquote>
-  <h2>Children</h2>
-  <p>ANVILBORN is intended for people aged 18 and over. It is not directed at children, and nothing is knowingly collected from them.</p>
-  <h2>What you can do</h2>
+  <p>Training logs, bodyweight and activity can count as health-related data in some countries. We use them only to run the app for you, never for advertising, and never sell them.</p>
+  <blockquote>Nothing in this app is medical advice or a health assessment. The body-part figures are an index of how much training each part has had. They are not a statement about your body, your fitness or your health. Talk to a qualified professional about your health.</blockquote>
+  <h2>How long data is kept</h2>
   <ul>
-    <li><strong>Export everything.</strong> Settings hands you a dated JSON file of your whole history through your phone's share sheet.</li>
-    <li><strong>Delete the account and everything in it</strong>, from Settings. It removes the server copy, the account, and this phone’s database.</li>
-    <li><strong>Delete everything on the phone alone</strong> by uninstalling the app or clearing its data. That erases the local database, photos included.</li>
-    <li><strong>Leave a leaderboard</strong> by removing the friendship, or delete the account to leave every board.</li>
-    <li><strong>Turn off what the coach knows</strong>, at any time, in Coach settings.</li>
-    <li><strong>Withdraw Health Connect access</strong> at any time, in Health Connect itself. The XP already earned stays, the same as any other logged training.</li>
+    <li>Your backup and account: until you delete them. Deleting your account removes them at once.</li>
+    <li>Analytics events and crash reports: only as long as needed to fix and improve the app, under those services’ retention settings.</li>
+    <li>Purchase records: as long as Google Play, RevenueCat and tax law require.</li>
+    <li>On your phone: until you delete the data, the account, or the app.</li>
   </ul>
+  <h2>Where data is processed</h2>
+  <p>Our services are mainly in the United States. If you live elsewhere, your data is transferred there. Where the law requires it, these transfers rely on the providers’ standard contractual clauses or an equivalent safeguard.</p>
+  <h2>Children</h2>
+  <p>ANVILBORN is for people aged 16 and over. The app asks your year of birth before setting anything up and does not let anyone younger continue. We do not knowingly collect data from children. If you believe a child has used the app, email us and we will delete their data.</p>
+  <h2>Your rights</h2>
+  <p>Wherever you live, you can do all of this:</p>
+  <ul>
+    <li><strong>Get a copy of your data.</strong> Settings exports your whole history as a dated file through your phone's share sheet.</li>
+    <li><strong>Delete your account and everything in it</strong>, from Settings → Your data. It removes the server copy, the account and this phone’s database straight away.</li>
+    <li><strong>Correct your data</strong> by editing it in the app.</li>
+    <li><strong>Withdraw consent</strong> for Health Connect in Health Connect.</li>
+    <li><strong>Leave a leaderboard</strong> by removing the friendship, or delete the account to leave every board.</li>
+    <li><strong>Ask us anything, or object to analytics</strong>, by email.</li>
+  </ul>
+  <p>If you are in the EU, UK, or a country with similar law (such as Switzerland, Brazil, Canada, South Africa, Australia or Japan), you also have the rights your law gives: access, correction, deletion, restriction, portability and objection, and the right to complain to your data protection authority. If you are in California or another US state with a privacy law, you can know, delete and correct your data. We do not sell or share personal information for cross-context advertising, and we do not use it to profile you for decisions with legal effects. We will not treat you differently for using any of these rights. We answer requests within 30 days.</p>
+  <h2>Security</h2>
+  <p>Everything sent to our services is encrypted in transit (HTTPS). Each account can read only its own rows on the server. No system is perfectly secure; if a breach ever affects your data, we will tell you and the authorities as the law requires.</p>
   <h2>Who processes what</h2>
   <ul>
-    <li><strong>Supabase</strong> — stores your backup, your leaderboard row, and runs the coach proxy. United States.</li>
-    <li><strong>Groq</strong> — generates coach answers in Online mode. United States.</li>
-    <li><strong>PostHog</strong> — product analytics.</li>
-    <li><strong>Sentry</strong> — crash reports.</li>
+    <li><strong>Supabase</strong>: backup, accounts and leaderboard rows. United States.</li>
+    <li><strong>RevenueCat</strong>: purchase records.</li>
+    <li><strong>Google</strong> (Google Play, Google sign-in, Health Connect): payments, sign-in, and the activity data you choose to share.</li>
+    <li><strong>PostHog</strong>: anonymous product analytics.</li>
+    <li><strong>Sentry</strong>: crash reports.</li>
+    <li><strong>Expo</strong>: app updates.</li>
   </ul>
-  <p>They act as processors, on our instructions. None is given your data for its own purposes, and none is an advertising network.</p>
+  <p>They act for us, on our instructions. None is given your data for its own advertising, and none is an advertising network.</p>
   <h2>Changes</h2>
-  <p>When this policy changes, the date at the top changes and the new version replaces this one. If a change ever means something new leaves your phone, the app will ask you before it does.</p>
+  <p>When this policy changes, the date at the top changes. If a change ever means something new leaves your phone, the app will ask you before it does.</p>
   <h2>Contact</h2>
-  <p>Questions about this policy, or about the data ANVILBORN holds about you: cma.apps.official@gmail.com. That includes asking for a copy of your data or asking for it to be deleted — though Settings can do both without waiting on a reply.</p>
+  <p>Questions, requests about your data, or complaints: cma.apps.official@gmail.com. Settings can export or delete your data without waiting on a reply.</p>
 </body>
 </html>
