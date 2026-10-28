@@ -32,7 +32,7 @@
     <li><strong>You never have to give an email address.</strong> Every part of the app works without one.</li>
     <li><strong>The app makes an anonymous account for you on first launch.</strong> It has no email or name attached. It exists so your training can be backed up and so a leaderboard can have a row for you. You can delete it, and everything in it, from Settings.</li>
     <li><strong>Your training lives on your phone first.</strong> The copy on our server is a backup, never the original.</li>
-    <li><strong>Photos never leave your phone.</strong> Progress photos, your profile photo and your cover image stay on the device. That is enforced in the code and by a test.</li>
+    <li><strong>Photos and routes never leave your phone.</strong> Progress photos, your profile and cover images, and the GPS route of every run, walk, ride or hike stay on the device. That is enforced in the code and by tests.</li>
     <li><strong>Other people can see six things about you</strong>, and only if you appear on a leaderboard: your name, your level, your title, your verified activity, your strongest body part, and your invite code.</li>
     <li><strong>Nothing about you is sold, and nothing is shared with advertisers.</strong> There are no ads and no advertising trackers in the app.</li>
   </ul>
@@ -42,6 +42,7 @@
   <ul>
     <li>The character you made, and its name.</li>
     <li>Every session, exercise and set you log, with dates.</li>
+    <li>Your runs, walks, rides and hikes, with their GPS routes.</li>
     <li>Your XP, level, medals, titles and training-volume figures.</li>
     <li>Anything you chose to tell the app: bodyweight, height, units, date of birth, sex, equipment, places you train, training days, goal, food and protein entries, and notes.</li>
     <li>Progress photos, a profile photo and a cover image, if you add them.</li>
@@ -58,7 +59,18 @@
   <h3>Purchases (Google Play and RevenueCat)</h3>
   <p>If you buy Pro or leave a tip, Google Play takes the payment. We never see your card or bank details. RevenueCat, our purchase service, receives your anonymous account identifier and the purchase record from Google Play (what you bought, when, and whether it is active) so the app knows you have Pro on any phone.</p>
   <h3>Health Connect, only if you connect it</h3>
-  <p>If you tap Connect, the app can read steps, distance and exercise sessions from Health Connect, and nothing else. It asks only when you tap Connect. The readings are not uploaded. The XP they earn is stored as verified activity and backed up like your other training, and that total is what a leaderboard ranks on. You can withdraw access any time in Health Connect. Health Connect data is used only to run these features, never for advertising, and never sold.</p>
+  <p>Health Connect is used only if you tap Connect, and only for the switches you leave on. Each one does one thing:</p>
+  <ul>
+    <li><strong>Weight, height:</strong> shown to you, and copied into your profile only when you tap Fill my profile.</li>
+    <li><strong>Body fat:</strong> shown on Status. Not stored.</li>
+    <li><strong>Protein (nutrition):</strong> added to your Fuel log, one total per day. Backed up like the rest of your log.</li>
+    <li><strong>Steps:</strong> shown as this week’s total on Integrations. Not stored.</li>
+    <li><strong>Distance and exercise sessions:</strong> turned into verified activity XP, which is backed up and is what a leaderboard ranks on. The readings themselves are not uploaded.</li>
+    <li><strong>Writing:</strong> your finished sessions, an estimate of the calories they used, and weight and height when you change them in the app.</li>
+  </ul>
+  <p>You can withdraw any of it at any time in Health Connect. Health Connect data is used only to run these features, never for advertising, never to make decisions about you, and never sold.</p>
+  <h3>Location, only while you record cardio</h3>
+  <p>When you start a run, walk, ride or hike, the app asks for your location and uses GPS until you finish, with a notification showing the whole time. It never tracks you in the background otherwise. <strong>Your route stays on this phone</strong>: it is not uploaded, not in backups, and deleted with your data. Only the distance and the XP it earned are backed up. Routes are drawn by the app itself; no map service sees them.</p>
   <h3>Analytics and crash reports (PostHog and Sentry)</h3>
   <ul>
     <li><strong>PostHog</strong> receives events about how the app is used, such as that a set was logged or a level was reached, with your anonymous account identifier. It never receives your name, email, a photo or a location: the app's event schema forbids those fields, and a test enforces it.</li>
