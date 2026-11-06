@@ -25,15 +25,15 @@
 </head>
 <body>
   <h1>ANVILBORN — Privacy Policy</h1>
-  <p class="updated">Last updated: 1 November 2026</p>
+  <p class="updated">Last updated: 6 November 2026</p>
   <p>ANVILBORN is a training app. This policy says what it stores, what leaves your phone, who receives it, and what you can do about it. It describes what the app actually does. When the app changes, this page changes with it.</p>
   <h2>The short version</h2>
   <ul>
     <li><strong>You never have to give an email address.</strong> Every part of the app works without one.</li>
     <li><strong>The app makes an anonymous account for you on first launch.</strong> It has no email or name attached. It exists so your training can be backed up and so a leaderboard can have a row for you. You can delete it, and everything in it, from Settings.</li>
     <li><strong>Your training lives on your phone first.</strong> The copy on our server is a backup, never the original.</li>
-    <li><strong>Photos and routes never leave your phone.</strong> Progress photos, your profile and cover images, and the GPS route of every run, walk, ride or hike stay on the device. That is enforced in the code and by tests.</li>
-    <li><strong>Other people can see six things about you</strong>, and only if you appear on a leaderboard: your name, your level, your title, your verified activity, your strongest body part, and your invite code.</li>
+    <li><strong>Photos never leave your phone, and routes only if you press Share.</strong> Progress photos and your profile and cover images stay on the device. The GPS route of a run, walk, ride or hike stays there too, unless you share that one run with your friends as a ghost, and then its first and last 300 m are cut first.</li>
+    <li><strong>Your friends, Shared Forges and a rival can see</strong> your name, level, title, verified activity and strongest body part. <strong>Friends you add see more</strong>, and you can turn that off. A <strong>rival you ask to be matched with</strong> sees only your name, level and days trained.</li>
     <li><strong>Nothing about you is sold, and nothing is shared with advertisers.</strong> There are no ads and no advertising trackers in the app.</li>
   </ul>
   <h2>Who is responsible</h2>
@@ -52,8 +52,14 @@
   <h2>What leaves your phone, and why</h2>
   <h3>Your training, to our database (Supabase)</h3>
   <p>A copy of your training is stored on our Supabase database, in the United States, so you can restore it or use a second phone: your character, sessions, sets, XP, medals, plans, and the profile fields above. Each row is readable only by the account that owns it, enforced by the database itself. Photos are not part of this copy.</p>
-  <h3>Six facts, to anyone on a leaderboard with you</h3>
-  <p>If you are on a leaderboard, one row about you is readable by other users: your display name, level, title, verified activity total, strongest body part and invite code. Your lifts, records, bodyweight, height, birth date, notes and photos are never in it.</p>
+  <h3>Your board row, to people you know or were matched with</h3>
+  <p>If you are on a leaderboard, one row about you is readable by your friends, your Shared Forges and a rival: your display name, level, title, verified activity total and strongest body part. Your invite code is yours to share. Your lifts, records, bodyweight, height, birth date, notes and photos are never in it.</p>
+  <h3>Friend alerts</h3>
+  <p>If you turn on Friend alerts, a push token for your phone is stored on our server and given to Expo and Google to deliver them. The alert itself can carry a friend’s name and what they did. Turning them off deletes the token.</p>
+  <h3>What friends and rivals see</h3>
+  <p>People you add with an invite code, and people in a Shared Forge with you, can see your training volume per body part, your days and sessions per week, your sensor-recorded distance per week and how many sessions a sensor backed. Friends can also see new lift records, any run you share as a ghost, and sessions you send them. Turn off Share with friends and this is removed from the server.</p>
+  <p>A ghost is shared one run at a time, only when you press Share. Its first and last 300 m and its time of day are removed before it leaves your phone, and Stop sharing deletes it from the server.</p>
+  <p>If you choose Find a Rival, a stranger near your level is matched with you for one week. They see your name, level and days, sessions and sensor distance per week, and nothing else. You become friends only if both of you say so. You can block or report a rival at any time, and then they can no longer see any of this. A report records who reported whom, and three reports stop somebody being matched.</p>
   <h3>Sign-in (Supabase and Google)</h3>
   <p>If you add an email or use Google sign-in, your email address is stored with your account so you can sign in again. With Google sign-in, Google tells us your email and a Google account identifier. We do not receive your Google password or contacts.</p>
   <h3>Purchases (Google Play and RevenueCat)</h3>
@@ -114,7 +120,7 @@
     <li><strong>Delete your account and everything in it</strong>, from Settings → Your data. It removes the server copy, the account and this phone’s database straight away. Without the app, follow cma-uplink.github.io/anvilborn-legal/delete.html.</li>
     <li><strong>Correct your data</strong> by editing it in the app.</li>
     <li><strong>Withdraw consent</strong> for Health Connect in Health Connect.</li>
-    <li><strong>Leave a leaderboard</strong> by removing the friendship, or delete the account to leave every board.</li>
+    <li><strong>Leave a leaderboard</strong> by removing the friendship, or delete the account to leave every board. <strong>Stop sharing with friends</strong> in Friends.</li>
     <li><strong>Ask us anything, or object to analytics</strong>, by email.</li>
   </ul>
   <p>If you are in the EU, UK, or a country with similar law (such as Switzerland, Brazil, Canada, South Africa, Australia or Japan), you also have the rights your law gives: access, correction, deletion, restriction, portability and objection, and the right to complain to your data protection authority. If you are in California or another US state with a privacy law, you can know, delete and correct your data. We do not sell or share personal information for cross-context advertising, and we do not use it to profile you for decisions with legal effects. We will not treat you differently for using any of these rights. We answer requests within 30 days.</p>
