@@ -80,6 +80,8 @@
   <h3>Location, only while you record cardio</h3>
   <p>When you start a run, walk, ride or hike, the app asks for your location and uses GPS until you finish, with a notification showing the whole time. It never tracks you in the background otherwise. <strong>Your route stays on this phone</strong>: it is not uploaded, not in backups, and deleted with your data. Only the distance and the XP it earned are backed up.</p>
   <p><strong>Route maps, only if you allow it.</strong> While you record, and in the route flyover, the app can show your route over a map (in 3D in the flyover). The first time, the app asks; the one answer covers both. If you allow it, map tiles are downloaded from OpenFreeMap, and terrain from Amazon Web Services' public terrain data, for the area around your route, so those services see your IP address and roughly where the route was. Map areas you have viewed, and the areas around your home forge and saved routes, are kept on the phone so the map also works without a connection. Your route itself is never sent: it is drawn on the phone. If you decline, the app draws the route itself and no map service is contacted. You can change this in the flyover at any time. Typed-in indoor sessions have no route and use no map.</p>
+  <h3>The Wear OS watch app, only if you install it</h3>
+  <p>If you install the watch app, your current lift, set, weight and rest time pass from your phone to the watch, and the sets you log on the watch pass back to the phone. They travel through Google's Wear OS Data Layer, which can carry them through Google's servers when the watch and phone are apart. Nothing else uses them.</p>
   <h3>Analytics and crash reports (PostHog and Sentry)</h3>
   <ul>
     <li><strong>PostHog</strong> receives events about how the app is used, such as that a set was logged or a level was reached, with your anonymous account identifier. It never receives your name, email, a photo or a location: the app's event schema forbids those fields, and a test enforces it.</li>
@@ -92,6 +94,7 @@
     <li>The coach runs entirely on your phone. Your questions never leave it.</li>
     <li>Spoken countdowns use your phone’s own text-to-speech.</li>
     <li>Rest-timer and reminder notifications are scheduled on the phone.</li>
+    <li>Home screen widgets, the session on the lock screen and the daily session card are drawn on the phone from what the app saves there. Anyone holding your phone can read its lock screen, so Workout settings can hide weights there, and both can be turned off.</li>
     <li>The app sets no cookies and contains no advertising or cross-app tracking.</li>
   </ul>
   <h2>Why we use your data (legal bases)</h2>
@@ -132,7 +135,7 @@
   <ul>
     <li><strong>Supabase</strong>: backup, accounts and leaderboard rows. United States.</li>
     <li><strong>RevenueCat</strong>: purchase records.</li>
-    <li><strong>Google</strong> (Google Play, Google sign-in, Health Connect): payments, sign-in, and the activity data you choose to share.</li>
+    <li><strong>Google</strong> (Google Play, Google sign-in, Health Connect, Wear OS): payments, sign-in, the activity data you choose to share, and what passes between your phone and watch.</li>
     <li><strong>PostHog</strong>: anonymous product analytics.</li>
     <li><strong>Sentry</strong>: crash reports.</li>
     <li><strong>Expo</strong>: app updates.</li>
